@@ -1,0 +1,11 @@
+num = [1, 2, 4, 6, 7, 9, 10]
+out = []
+a = num[0]
+
+for i in num:
+    while a != i:
+        out.append(a)
+        a += 1
+    a += 1
+
+print(out)
