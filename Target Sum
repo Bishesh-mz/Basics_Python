@@ -1,0 +1,12 @@
+nums = [3, 5, 1, 4, -8]
+target = 5
+
+a = 0
+while a < len(nums):
+    b = a + 1
+    while b < len(nums):
+        x = nums[a] + nums[b]
+        if x == target:
+            print("[", a, ",", b, "]")
+        b += 1
+    a += 1
