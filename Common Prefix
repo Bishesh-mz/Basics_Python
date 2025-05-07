@@ -1,0 +1,18 @@
+strs = ["dog", "doggy", "dogie"]
+a = strs[0]
+b = strs[1]
+c = strs[2]
+
+d = e = f = 0
+
+for i in a:
+    if a[e] == b[e] == c[e]:
+        e += 1
+        f += 1
+    else:
+        break
+
+if f > 0:
+    print(a[:f])
+else:
+    print('"'+'"')
