@@ -1,0 +1,14 @@
+arr = [10, 13, 12]
+out = []
+arr.sort()
+a = arr[0]
+
+for i in range(len(arr)):
+    if a != arr[i]:
+        out.append(a)
+        break
+    a += 1
+
+if len(out) == 0:
+    out.append(a)
+print(out)
