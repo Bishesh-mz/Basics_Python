@@ -1,10 +1,11 @@
-#given array
 arr = [10, 10, 10]
 
-#solution
 arr = set(arr)
 arr = list(arr)
 arr.sort()
+
+#numbers had to be distinct
+#if no 2nd largest, print -1
 
 if len(arr) <= 1:
     print(-1)
