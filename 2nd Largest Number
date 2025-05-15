@@ -1,0 +1,12 @@
+#given array
+arr = [10, 10, 10]
+
+#solution
+arr = set(arr)
+arr = list(arr)
+arr.sort()
+
+if len(arr) <= 1:
+    print(-1)
+else:
+    print(arr[-2])
