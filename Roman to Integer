@@ -1,0 +1,29 @@
+def romantoint(roman_num):
+    roman = roman_num.upper()
+    value = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+    i = 0
+    t = 0
+    while i < len(roman):
+        if i != len(roman) - 1:
+            if value[roman[i]] < value[roman[i + 1]]:
+                t += value[roman[i + 1]] - value[roman[i]]
+                i += 2
+            else:
+                t += value[roman[i]]
+                i += 1
+        else:
+            t += value[roman[i]]
+            i += 1
+    return t
+
+
+roman_num = input("Enter a roman numeral: ")
+print(romantoint(roman_num))
